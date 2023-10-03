@@ -33,22 +33,22 @@ const ShowUserData = () =>{
     // }
 
 
-    const printRef = React.useRef();
+  //   const printRef = React.useRef();
 
-  const handleDownloadPdf = async () => {
-    const element = printRef.current;
-    const canvas = await html2canvas(element);
-    const data = canvas.toDataURL('image/png');
+  // const handleDownloadPdf = async () => {
+  //   const element = printRef.current;
+  //   const canvas = await html2canvas(element);
+  //   const data = canvas.toDataURL('image/png');
 
-    const pdf = new jsPDF();
-    const imgProperties = pdf.getImageProperties(data);
-    const pdfWidth = pdf.internal.pageSize.getWidth();
-    const pdfHeight =
-      (imgProperties.height * pdfWidth) / imgProperties.width;
+  //   const pdf = new jsPDF();
+  //   const imgProperties = pdf.getImageProperties(data);
+  //   const pdfWidth = pdf.internal.pageSize.getWidth();
+  //   const pdfHeight =
+  //     (imgProperties.height * pdfWidth) / imgProperties.width;
 
-    pdf.addImage(data, 'PNG', 0, 0, pdfWidth, pdfHeight);
-    pdf.save('print.pdf');
-  };
+  //   pdf.addImage(data, 'PNG', 0, 0, pdfWidth, pdfHeight);
+  //   pdf.save('print.pdf');
+  // };
     
     return(
         <div className='bg-purple-100 min-h-screen'>
@@ -74,9 +74,9 @@ const ShowUserData = () =>{
                       ></input>
                     </div>
 
-                    <div>
+                    {/* <div>
                       <button className='ml-10 text-2xl bg-slate-400 shadow-2xl pt-4 pb-4 pr-2 pl-2 border rounded-xl hover:bg-slate-500' onClick={handleDownloadPdf}>Download Report</button>
-                    </div>
+                    </div> */}
 
 
                     <div className='flex justify-center items-center '>
