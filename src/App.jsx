@@ -1,6 +1,6 @@
 import React from 'react'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import Selection from './components/selection'
+import Selection from './components/Selection'
 import AdminLogin from './components/AdminLogin'
 import UserLogin from './components/UserLogin'
 import ShowUserData from './components/ShowUserData'
