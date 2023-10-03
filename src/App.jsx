@@ -6,7 +6,7 @@ import UserLogin from './components/UserLogin'
 import ShowUserData from './components/ShowUserData'
 import ShowEmployee from './components/ShowEmployee'
 import AdminChoice from './components/AdminChoice'
-import NewSignIn from './components/newSignIn'
+import NewSignIn from './components/NewSignIn'
 import AddUserData from './components/AddUserData'
 import NewSignUp from './components/NewSignUp'
 
